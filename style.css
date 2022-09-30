@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500;600;700&family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;500;600;700&family=Source+Sans+Pro:wght@200&display=swap');
+* {
+    
+    margin: 0;
+
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-block {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 33rem;
+    width: 40rem;
+    
+}
+.description {
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    height: 100%;
+    gap: 2.2rem;
+    border-radius: 0 1rem 1rem 0;
+    
+}
+.description .title {
+    font: bold 2.3rem/1  'Fraunces', serif;
+    padding: 2rem 4rem 0 2rem;
+
+    
+}
+
+.description .text{
+    padding: 2rem 2rem 0 2rem;
+    font: 1rem/1.7 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    
+}
+.description .type{
+    padding: 1.5rem 0 0 2rem;
+    font:  0.8rem  'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    
+    color: hsl(228, 12%, 48%);
+}
+.lt{
+    padding-left: 2rem;
+}
+.btn-action{
+    
+    background-color:hsl(158, 36%, 37%) ;
+    border: none;
+    width: 90%;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+    
+
+}
+.btn-action:hover{
+    cursor: pointer;
+    background-color: hsl(159, 41%, 16%);
+}
+span {
+    padding-left: 0.5rem;
+}
+
+
+.img  {
+    height: 100%;
+    width: 50%;
+    border-radius: 1rem 0 0 1rem  ;
+    background-image: url(./images/image-product-desktop.jpg) ;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+} 
+
+
+
+.prices {
+    padding: 1.5rem 0 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+.prices .price{
+    font: 2.3rem 'Fraunces', serif;
+    color:hsl(158, 36%, 37%) ;
+    
+}
+.prices .p-before{
+    font: 0.8rem 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+
+
+@media (max-width: 375px) {
+    body {
+        
+        height: 100vh;
+
+    }
+    .main-block{
+        flex-direction: column;
+        height: 90%;
+        width: 92%;
+        
+        
+    }
+    .description{
+        
+        padding: 0;
+        width: 100%;
+        height: 80%;
+        border-radius: 0 0 1rem 1rem;
+    }
+    .description .title {
+        font: 2rem/1  'Fraunces', serif;
+        font-weight: bold;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        width:90%;
+    }
+    
+    .description .text{
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        font: 0.9rem/1.7 'Montserrat', sans-serif;
+        color: hsl(228, 12%, 48%);
+        
+    }
+    .description .type{
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        font:  0.8rem  'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        
+        color: hsl(228, 12%, 48%);
+    }
+    .prices {
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 1rem;
+        
+    }
+    .prices .price{
+        font: 2rem 'Fraunces', serif;
+        color:hsl(158, 36%, 37%) ;
+        
+    }
+    .prices .p-before{
+        font: 0.8rem 'Montserrat', sans-serif;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+    }
+    .btn-action{
+        background-color:hsl(158, 36%, 37%) ;
+        border: none;
+        width: 100%; 
+        height: 3rem;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: aliceblue;
+        
+    }
+    .lt{
+        padding: 0 1.5rem 0 1.5rem;    
+    }
+    .img {
+        width: 100%;
+        height: 50%;
+        border-radius: 1rem 1rem 0 0  ;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+
+    } 
+
+}
